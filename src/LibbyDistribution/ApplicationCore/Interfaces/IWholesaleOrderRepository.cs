@@ -12,5 +12,7 @@ namespace ApplicationCore.Interfaces
         void Add(WholesaleOrder NewWholesaleOrder);
         void Update(WholesaleOrder EditedWholesaleOrder);
         void Delete(WholesaleOrder WholesaleOrderToDelete);
+        IEnumerable<WholesaleOrder> GetByWholesaleCustomer(WholesaleCustomer wholesaleCustomer);
+        IEnumerable<WholesaleOrder> GetBySalesAgent(SalesAgent salesAgent);
     }
 }

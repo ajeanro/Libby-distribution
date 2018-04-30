@@ -7,7 +7,7 @@ namespace ApplicationCore.Entities
     public class WholesaleOrder
     {
         public int Id { get; set; }
-        public int WholesaleCustomerId { get; set; }
+        public int? WholesaleCustomerId { get; set; }
         public WholesaleCustomer WholesaleCustomer { get; set; }
         public List<WholesaleOrderDetail> WholesaleOrderDetails { get; set; }
         public int SalesAgentId { get; set; }

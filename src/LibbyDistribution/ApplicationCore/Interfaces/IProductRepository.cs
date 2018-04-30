@@ -12,5 +12,6 @@ namespace ApplicationCore.Interfaces
         void Add(Product NewProduct);
         void Update(Product EditedProduct);
         void Delete(Product ProductToDelete);
+        IEnumerable<Product> GetByCategory(Category category);
     }
 }

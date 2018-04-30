@@ -12,5 +12,8 @@ namespace ApplicationCore.Interfaces
         void Add(RetailOrder NewRetailOrder);
         void Update(RetailOrder EditedRetailOrder);
         void Delete(RetailOrder RetailOrderToDelete);
+        IEnumerable<RetailOrder> GetByRetailCustomer(RetailCustomer retailCustomer);
+        IEnumerable<RetailOrder> GetByDriver(Driver driver);
+        IEnumerable<RetailOrder> GetBySalesAgent(SalesAgent salesAgent);
     }
 }
